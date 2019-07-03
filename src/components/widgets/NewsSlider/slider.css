@@ -1,0 +1,32 @@
+.slider {
+
+}
+
+.featured_item {
+  position: relative;
+}
+
+.featured_image {
+  height: 330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.featured_item a {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-decoration: none;
+  right: 0;
+}
+
+.featured_caption {
+  color: #fff;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 28px;
+  box-sizing: border-box;
+}

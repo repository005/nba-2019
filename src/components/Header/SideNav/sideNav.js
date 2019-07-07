@@ -3,7 +3,7 @@ import SideNav from 'react-simple-sidenav';
 
 import SideNavItems from './sideNavItems';
 
-const SideNavigtion = (props) => {
+const SideNavigation = (props) => {
   return (
     <div>
       <SideNav
@@ -21,4 +21,4 @@ const SideNavigtion = (props) => {
   );
 };
 
-export default SideNavigtion;
+export default SideNavigation;

@@ -5,11 +5,11 @@ import SliderTemplates from './slider_templates';
 
 class NewsSlider extends Component {
 
-    state = {
+    state = { 
         news: []
     }
 
-    componentDidMount() {
+    componentWillMount() {
         axios.get(`http://localhost:3004/articles?_start=${this.props.start}&_end=${this.props.start + this.props.amount}`)
         .then (response => {
             this.setState({

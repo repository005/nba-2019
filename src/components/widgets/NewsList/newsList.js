@@ -44,6 +44,9 @@ class NewsList extends Component {
   loadMore = () => {
     let end = this.state.end + this.state.amount;
     this.request(this.state.end, end);
+    this.setState({
+      end: end
+    })
   }
 
   renderNews = (type) => {
@@ -63,7 +66,7 @@ class NewsList extends Component {
           >
             <div className={styles.newslist_item}>
               <Link to={`/articles/${item.id}`}>
-                <CardInfo />
+                <CardInfo teams={this.state.teams} team={item.id} date={item.date}/>
                 <h2>{item.title}</h2>
               </Link>
             </div>
@@ -80,8 +83,6 @@ class NewsList extends Component {
   
 
   render() {
-
-    console.log(this.state.teams);
     
     
     return(

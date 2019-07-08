@@ -70,7 +70,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "fake-json": "json-server --watch db.json --port 3004",
+    "fake-json": "json-server --watch db.json --port 3005",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {

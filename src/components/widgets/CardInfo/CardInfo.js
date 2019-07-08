@@ -2,15 +2,27 @@ import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import styles from './cardinfo.css';
 
-const CardInfo = () => {
+const CardInfo = (props) => {
+
+  const teamName = (teams, team) => {
+      let data = teams.find((item) => {
+        return item.id === team;
+      });
+
+      if (data) {
+        return data.name;
+      }
+  }
+  
+
   return (
-    <div style={styles.cardInfo}>
+    <div className={styles.cardInfo}>
       <span className={styles.teamName}>
-        TeamExample
+        {teamName(props.teams, props.team)}
       </span>
       <span className={styles.date}>
         <FontAwesome name="clock-o"/>
-          12/20
+        {props.date}
       </span>
     </div>
   )

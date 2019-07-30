@@ -30,7 +30,6 @@ class NewsArticle extends Component {
       
     });
   }
-  
 
   render() {
     const article = this.state.article;

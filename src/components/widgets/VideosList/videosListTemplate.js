@@ -8,7 +8,6 @@ const VideosListTemplate = (props) => {
   
   
   return props.data.map( (item,i) => {
-    console.log(item);
     
     return (
       <Link to={`/videos/${item.id}`} key={i}>

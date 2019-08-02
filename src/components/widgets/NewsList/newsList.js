@@ -5,6 +5,7 @@ import axios from 'axios';
 import styles from './newsList.css';
 import Button from '../Button/Button';
 import CardInfo from '../CardInfo/CardInfo';
+import Logo from '../Logo/logo';
 
 import { URL } from '../../../config';
  
@@ -69,6 +70,30 @@ class NewsList extends Component {
                 <CardInfo teams={this.state.teams} team={item.id} date={item.date}/>
                 <h2>{item.title}</h2>
               </Link>
+            </div>
+          </CSSTransition>
+        ));
+        break;
+      case("image_card"):
+        template = this.state.items.map((item, i) => (
+          <CSSTransition
+            classNames={{
+              enter: styles.newsList_wrapper,
+              enterActive: styles.newsList_wrapper_enter
+            }}
+            timeout={500}
+            key={i}
+          >
+            <div className={styles.newslist_item_wrapper}>
+              <Logo teams={this.state.items} team={item.id} date={item.date}/>
+              <div className={styles.newslist_item}>
+                <Link to={`/articles/${item.id}`}>
+                  <div>
+                    <CardInfo teams={this.state.teams} team={item.id} date={item.date}/>
+                    <h2>{item.title}</h2>
+                  </div>
+                </Link>
+              </div>
             </div>
           </CSSTransition>
         ));

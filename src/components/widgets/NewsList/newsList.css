@@ -3,6 +3,7 @@
     background: #fff;
     margin-top: 0px;
     padding: 8px 5px 0 5px;
+    flex-grow: 1;
 }
 
 .newslist_item h2 {
@@ -26,4 +27,9 @@
 .newsList_wrapper_enter {
     opacity: 1;
     transform: translateX(0);
+}
+
+
+.newslist_item_wrapper {
+    display: flex;
 }

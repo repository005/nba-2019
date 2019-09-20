@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../articles.css';
-
 const TeamNfo = (props) => {
   
   return (

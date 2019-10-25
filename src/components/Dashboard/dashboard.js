@@ -155,7 +155,6 @@ class Dashboard extends Component {
     }
 
     console.log(dataToSubmit);
-    
 
     if (formIsValid) {
       
@@ -203,7 +202,6 @@ class Dashboard extends Component {
 
   storeFilename = (filename) => {
     this.updateForm({id:'image'}, filename);
-
   }
 
   render() {

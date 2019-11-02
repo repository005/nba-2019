@@ -4,7 +4,6 @@ import { firebaseDB, firebaseLooper, firebaseTeams, firebase } from '../../../..
 import styles from '../../articles.css';
 
 import Header from './header';
-import { validate } from '@babel/types';
 
 class NewsArticle extends Component {
 

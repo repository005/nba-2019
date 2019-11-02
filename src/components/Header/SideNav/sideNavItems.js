@@ -7,8 +7,6 @@ import {firebase} from '../../../firebase';
 import FontAwesome from 'react-fontawesome';
 
 const SideNavItems = (props) => {
-  console.log(props);
-  
 
   const items = [
     {
